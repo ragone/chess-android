@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+    <RelativeLayout tools:context="sjq5766.aut.chessapp.SMSActivity" android:paddingBottom="@dimen/activity_vertical_margin" android:paddingTop="@dimen/activity_vertical_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:paddingLeft="@dimen/activity_horizontal_margin" android:layout_height="match_parent" android:layout_width="match_parent" xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditText android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginTop="84dp" android:layout_centerHorizontal="true" android:layout_alignParentTop="true" android:id="@+id/phoneText" android:ems="10" android:inputType="phone"/>
+
+    <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_centerHorizontal="true" android:id="@+id/btnStartGame" android:layout_below="@+id/phoneText" android:text="Start Game"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_centerHorizontal="true" android:layout_alignParentTop="true" android:id="@+id/textView" android:text="Please enter phonenumber of your opponent" android:textAlignment="center" android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+</RelativeLayout>

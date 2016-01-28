@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="sjq5766.aut.chessapp" >
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/wk"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".ChessApp.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ChessApp.BluetoothActivity"
+            android:label="ChessApp"
+            android:parentActivityName=".ChessApp.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ChessApp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ChessApp.ChessActivity"
+            android:label="ChessApp"
+            android:parentActivityName=".ChessApp.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ChessApp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ChessApp.TutorialActivity"
+            android:label="ChessApp"
+            android:parentActivityName=".ChessApp.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="sjq5766.aut.chessapp.ChessApp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ChessApp.SMSActivity"
+            android:label="ChessApp"
+            android:parentActivityName=".ChessApp.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="sjq5766.aut.chessapp.ChessApp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ChessApp.SMSChessActivity"
+            android:label="ChessApp"
+            android:parentActivityName=".ChessApp.SMSActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="sjq5766.aut.chessapp.ChessApp.SMSActivity" />
+        </activity>
+
+        <receiver android:name=".ChessApp.SMS.SMSReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.DATA_SMS_RECEIVED" />
+                <data android:port="8091" />
+                <data android:scheme="sms" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

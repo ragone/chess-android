@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="sjq5766.aut.chessapp.ChessApp.ChessActivity">
+    <item android:id="@+id/list_item1" android:title="Switch to UI"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/list_item2" android:title="Switch to BT Comm"
+        android:orderInCategory="100" app:showAsAction="never" />
+
+</menu>

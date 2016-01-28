@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="sjq5766.aut.chessapp.ChessApp.BluetoothActivity">
+    <item android:id="@+id/list_item1" android:title="Get FEN"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/list_item2" android:title="Set FEN"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/list_item3" android:title="Connect Bluetooth"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/list_item4" android:title="Connect SMS"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/list_item5" android:title="Reverse board"
+        android:orderInCategory="100" app:showAsAction="never" />
+</menu>
